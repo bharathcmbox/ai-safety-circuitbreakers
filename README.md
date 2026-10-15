@@ -2,6 +2,8 @@
 
 An interactive simulator of **circuit breakers** for LLMs, after Zou et al., *Improving Alignment and Robustness with Circuit Breakers* (2024), [arXiv:2406.04313](https://arxiv.org/abs/2406.04313).
 
+**▶ [Click here to try the simulator](https://bharathcmbox.github.io/ai-safety-circuitbreakers/)**. It runs in your browser, with nothing to install.
+
 You pick a harmful, benign, or borderline request and an attack (prefilling, GCG, multilingual, input-embedding, RepE…). Then you watch tokens stream while two breakers watch the residual stream:
 
 - **Representation Rerouting (RR)** (control). LoRA-style rerouting pushes harmful representations orthogonal to the original at the target layers (10 & 20). Cosine collapses, norms blow up, and the model emits gibberish then `<EOS>` (paper Fig. 6, 12, Algorithm 1).
