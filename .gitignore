@@ -1,0 +1,8 @@
+node_modules
+dist
+dist-single
+*.log
+*.tsbuildinfo
+
+# Paper PDF is kept locally only; link to arXiv instead of redistributing it
+references/
